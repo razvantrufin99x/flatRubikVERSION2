@@ -1,0 +1,63 @@
+
+public List<int> indexListC11 = new List<int>();
+public List<int> indexListC12 = new List<int>();
+public List<int> indexListC13 = new List<int>();
+
+public List<int> indexListC21 = new List<int>();
+public List<int> indexListC22 = new List<int>();
+public List<int> indexListC23 = new List<int>();
+
+public List<int> indexListC31 = new List<int>();
+public List<int> indexListC32 = new List<int>();
+public List<int> indexListC33 = new List<int>();
+
+
+public List<int> groupA = new List<int>();
+public List<int> groupB = new List<int>();
+public List<int> groupC = new List<int>();
+public List<int> groupD = new List<int>();
+public List<int> groupE = new List<int>();
+
+
+
+//muta in stanga cu 0 pozitie culorile nu pozitiile care vor fi fixe
+//0 1 2 3 4 5 6 7 8 9 10 11 
+//1 2 3 4 5 6 7 8 9 10 11 0
+
+public void rotateToLeft(ref List<int> pl)
+{
+	color aux;
+	
+	aux = pl[0].BackColor;
+
+	
+		
+	for(int i = 0;i<pl.count-1;i++)
+	{
+		pl[i].BackColor = pl[i+1].BackColor;
+			
+	}
+	pl[pl.count-1].BackColor=aux;
+	
+	
+}
+
+//0 1 2 3 4 5 6 7 8 9 10 11 
+//11 0 1 2 3 4 5 6 7 8 9 10
+
+//muta in dreapta cu 0 pozitie culorile nu pozitiile care vor fi fixe
+public void rotateToRight(ref List<int> pl)
+{
+	color aux;
+	
+	aux = pl[pl.count-1].BackColor;
+		
+	for(int i = pl.count-1;i>0;i--)
+	{
+		pl[i-1].BackColor = pl[i].BackColor;
+			
+	}
+	pl[0].BackColor=aux;
+	
+	
+}

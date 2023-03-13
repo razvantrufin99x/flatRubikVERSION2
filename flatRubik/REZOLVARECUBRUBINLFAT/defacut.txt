@@ -1,0 +1,15 @@
+de facut
+
+
+fie creezi 6 grupuri de cate 9 ca un cerc 
+fie creezi 6 grupuri de cate 9 ca si patrat si apoi imparti pr un cerc totul
+
+butoane
+ muta in stanga sau in dreapta cercul cu balls 
+  aici trebuie sa muti dintrun grup un altul
+   adica pe un cerc raman balls dar balls se muta pe un alt grup rotindue-se cercul pe care sunt 
+ pentru a muta programatic verifica daca un ball apartine unui cerc adica verifici daca se afla ball pe cerc utilizand raza si centrul cercului   
+   
+   
+   
+

@@ -1,0 +1,89 @@
+pozitie zero
+1	2	3
+4	5	6
+7	8	9
+
+
+stanga din zero 
+3	6	9
+2	5	8
+1	4	7
+
+
+TREBUIE MODIFICAT TOTUL PENTRU CA SA FOLOSIM INDEXUL SI SA SCHIMBAM CULORILE SI NU ALTFEL PENTRU A NU DISTRUGE APLICATIA
+
+
+fiecare matricea este un grup de ball luate din fila cu grupruile 
+
+ce creat o matrice copie a matricea x
+de facut modificarile in matricea copie
+de copiat matricea copie in matricea x
+
+public List<int> createMatrixnxn(int a)
+{
+    return new List<int>(a);
+}
+
+public void copyMatrixAToMatrixB(ref List<int> a,ref List<b> )
+{
+    for(int i = 0;i<x.Lenght;i++)
+	{
+		b[i] = a[i];
+	}
+}
+
+public void rotesteStangaMatricea(ref List<int> px)
+{
+	List<int> x = new List<int>();
+    copyMatrixAToMatrixB(ref px, ref x);
+	schimba(ref x[1],ref x[3]);
+	schimba(ref x[2],ref x[6]);
+	schimba(ref x[3],ref x[9]);
+	
+	schimba(ref x[4],ref x[2]);
+	schimba(ref x[6],ref x[8]);
+	
+	schimba(ref x[7],ref x[1]);
+	schimba(ref x[8],ref x[4]);
+	schimba(ref x[9],ref x[7]);
+    
+	copyMatrixAToMatrixB(ref x, ref px);
+}
+
+pozitie zero
+1	2	3
+4	5	6
+7	8	9
+dreapta din zero 
+7	4	1
+8	5	2
+9	6	3
+
+
+/// atentie ca nu se poate folosi schimba decat cu o copie a matricei
+public void rotesteStangaMatricea(ref List<int> px)
+{
+
+    List<int> x = new List<int>();
+    copyMatrixAToMatrixB(ref px, ref x);
+	schimba(ref x[1],ref x[7]);
+	schimba(ref x[2],ref x[4]);
+	schimba(ref x[3],ref x[1]);
+	
+	schimba(ref x[4],ref x[8]);
+	schimba(ref x[6],ref x[2]);
+	
+	schimba(ref x[7],ref x[9]);
+	schimba(ref x[8],ref x[6]);
+	schimba(ref x[9],ref x[3]);
+    
+    copyMatrixAToMatrixB(ref x, ref px);
+	
+}
+public void schimba(ref int a, ref int b)
+{
+ tmp c;
+ c = a;
+ a = b;
+ b = c;
+}

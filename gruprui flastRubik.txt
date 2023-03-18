@@ -1,0 +1,45 @@
+grupuri
+sus
+c2 cu c3
+39 	40 	41 	c21
+45 	46 	47 	c22
+51 	52 	53 	c23
+c31 c32 c33
+
+mijloc stanga
+c3 cu c1
+3 	4 	5	c11
+15	16	17	c12
+27	28	29	c13
+c31 c31 c33 
+
+mijloc dreapta
+c1 cu c2 
+6	7	8	c11
+18	19	20	c12
+30	31	32	c13 
+c21 c22 c23
+
+jos stanga 
+c1 cu c2 
+0	1	2	c11
+12	13	14	c12
+24	25	26	c13 
+c23 c22 c21 
+
+
+
+jos mijloc 
+c2 cu c3 
+36	37	38 	c21
+42	43	44	c22 
+48	49	50	c23 
+c33 c32 c31 
+
+
+jos dreapta 
+c1 cu c3
+9	10	11	c11
+21	22	23	c12 
+33	34	35	c13
+c21 c22 c23 
